@@ -6,8 +6,12 @@ const ErrorBoundary = () => {
   return (
     <>
       <Header/>
-      <h2>404 Page Not Found</h2>
-      <Link to={'/'}>Go to Home Page</Link>
+      <div className="container">
+        <div className="content">
+          <h2 className="errr">404 Page Not Found</h2>
+          <Link to={'/'}>Go to Home Page</Link>
+        </div>
+      </div>
       <Footer/>
     </>
   )

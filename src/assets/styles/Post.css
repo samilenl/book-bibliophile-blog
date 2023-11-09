@@ -98,7 +98,7 @@
     height: 100vh;
 }
 
-article > * {
+.article > * {
     font-size: 18.5px;
 }
 

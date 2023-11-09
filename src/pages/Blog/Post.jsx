@@ -12,6 +12,7 @@ const Post = () => {
     const [Unauthorized, setUnauthorized] = useState(false)
     
     useEffect( () => {
+        console.log("here", id)
         async function fetchData () {
           try {
             const thisPost = await fetch(`http://localhost:3000/posts/${id}`)
@@ -73,9 +74,9 @@ const Post = () => {
               </div>
               
       
-              <article>
+              <div className="article">
                 {parse(post.info.text)}
-              </article>
+              </div>
 
               <div className="cmtCntr">
                 <h3 className="cmtHdr">Comments</h3>
