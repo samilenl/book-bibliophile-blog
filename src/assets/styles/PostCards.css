@@ -1,0 +1,93 @@
+.postCards {
+    width: 100%;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    margin-top: 10vh;
+    flex-wrap: wrap;
+}
+
+
+.cards {
+    width: 400px;
+}
+
+.cardImg {
+    border: solid black 2px;
+    height: 40vh;
+    overflow: hidden;
+}
+
+.cardImg > img {
+    width: 100%;
+    height: 40vh;
+    object-fit: cover;
+}
+
+
+.cardImg img {
+    transform-origin: 65% 75%;
+    transition: transform 1s, filter .5s ease-out;
+  }
+  
+.cardImg:hover img {
+    transform: scale(1.1);
+}
+
+.topics{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.topicsN {
+    font-size: 14px;
+    font-weight: 600;
+    border: solid black 2px;
+    border-radius: 20px;
+    padding: 4px 7px;
+}
+
+.caWa {
+    margin: 20px 0px;
+    position: relative;
+}
+
+.caWa > h3 {
+    word-wrap: break-word;
+    margin-right: 20px;
+}
+
+.caWa > p {
+    font-weight: 600;
+    font-size: 14px;
+    margin: 10px 0px;
+}
+
+.arrow > img {
+    width: 13px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+@media (max-width: 950px){
+    .cards {
+        /* flex-basis: 47%;
+        flex-grow: 0;
+        flex-shrink: 0; */
+        width: 350px;
+    }
+    .postCards {
+        flex-wrap: wrap;
+    }
+} 
+
+@media (max-width: 830px){
+    .cards {
+        width: 100%;
+    }
+    .postCards {
+        flex-wrap: wrap;
+    }
+} 

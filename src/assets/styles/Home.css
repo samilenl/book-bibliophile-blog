@@ -1,0 +1,189 @@
+.imgCont {
+    border: solid black 3px;
+    width: 100%;
+    height: 100vh;
+}
+
+.imgCont > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.imgCont img {
+    transform-origin: 65% 75%;
+    transition: transform 1s, filter .5s ease-out;
+  }
+  
+.imgCont:hover img {
+    transform: scale(1.03);
+}
+
+.mobile-hero {
+    display: none;
+}
+
+.hero-content {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero-content > a {
+    display: flex;
+    justify-content: center;
+}
+
+.hero-text {
+    color: white;
+    position: absolute;
+    backdrop-filter: blur(50px);
+    bottom: 0;
+    width: 90%;
+    margin-bottom: 1.4%;
+    padding: 20px 30px;
+    border: solid white 1px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in forwards;
+    transform: translateY(-20px);
+}
+  
+@keyframes fadeInAnimation {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+
+
+.text-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20vh;
+}
+
+.text-info > :first-child {
+    display: flex;
+    justify-content: space-between;
+    gap: 10vh;
+}
+
+.info, .des {
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.des {
+    border: solid white 2px;
+    border-radius: 15px;
+    padding: 3px 7px;
+    margin: 4px;
+    white-space: nowrap;
+}
+
+.desCont {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.infos > text {
+    font-size: 14px;
+}
+
+.hh {
+    margin: 14vw;
+}
+
+.hero1 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 2vh;
+}
+
+.hero2 {
+    text-align: center;
+    font-size: 22px;
+    color: rgb(102, 102, 102);
+    font-weight: 600;
+}
+
+.recent {
+    text-align: center;
+    margin-top: 3.5vw;
+    font-size: 25px;
+    border-bottom: solid black 3px;
+    padding: 5px;
+    width: max-content;
+    font-weight: 600;
+}
+
+.linkPosts {
+    text-align: center;
+    font-weight: 500;
+    margin: 3vh;
+}
+
+
+@media (max-width: 650px) {
+    .hero1 {
+        font-size: 40px;
+    }
+    .hero2 {
+        font-size: 19px;
+    }
+}
+
+@media (max-width: 530px) {
+    .hero1 {
+        font-size: 35px;
+    }
+    .hero2 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 430px) {
+    .hero1 {
+        font-size: 30px;
+    }
+    .hh{
+        margin: 12vh 20px;
+    }
+    .hero2 {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 800px) {
+    .hero-content {
+        display: none;
+    }
+
+    .mobile-hero {
+        display: block;
+    }
+}
+
+.holderCards {
+    width: 100%;
+    height: 300px;
+}

@@ -1,0 +1,133 @@
+.post-header {
+    margin-top: 15vh;
+    border-bottom: solid black 2px;
+    margin-bottom: 5vh;
+}
+
+.post-header > h1{
+    max-width: 70vw;
+    padding-bottom: 5vh;   
+}
+
+.post-author {
+    font-weight: 600;
+    font-size: 15px;
+    margin: 7px 0px;
+}
+
+.post-topics {
+    font-size: 14px;
+    font-style: italic;
+    color: gray;
+    font-weight: 600;
+}
+
+
+.cmtHdr {
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+}
+#comment-box {
+    
+    font-family: inherit;
+    padding: 10px 20px;
+    resize: none;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-bottom: solid lightgray 1px;
+    margin-bottom: 20px;
+}
+
+#comment-box:focus {
+    border-bottom: solid black 1px;
+}
+
+.comments {
+    padding: 20px;
+    border-top: solid black 1px;
+    border-bottom: solid black 1px;
+    /* display: flex;
+    justify-content: space-between; */
+}
+
+#comment-btn {
+    border: none;
+    padding: 7px 14px;
+    /* height: 10px; */
+    border-radius: 20px;
+    font-family: inherit;
+    font-weight: 600;
+    /* width: 80%; */
+}
+
+.add-comment {
+    /* display: grid;
+    grid-template-columns: 7fr 1fr;
+    align-items: baseline; */
+    margin-bottom: 20px;
+}
+
+.comment-user {
+    font-size: 14.5px;
+    font-weight: 600;
+}
+
+.comment-text {
+    padding: 10px;
+}
+
+.comment-date{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 12px;
+    font-style: italic;
+}
+
+.cmtCntr {
+    margin-bottom: 10vh;
+}
+
+.post-image {
+    width: 100%;
+    height: 100%;
+}
+
+.post-image > img {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+article > * {
+    font-size: 18.5px;
+}
+
+@media (max-width: 800px) {
+    .post-header {
+        margin-top: 8vh;
+    }
+
+    .post-image > img {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 500px) {
+    .post-image > img {
+        height: 50vh;
+    }
+    article > * {
+        font-size: 14.6px;
+    }
+}
+
+.error-msg {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.no-comment {
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
