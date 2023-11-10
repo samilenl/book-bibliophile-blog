@@ -36,23 +36,22 @@ Third Party Libraries:
 To set up and run the websites locally, follow these steps:
 
 
-Clone the repository:
+- Clone the repository:
 ```
    git clone https://github.com/samilenl/book-bibliophile-blog.git
 ```
 
-Install the dependencies for both websites:
+- Install the dependencies for the websites:
 ```
    cd book-bibliophile-blog
    npm install
 ```
 
-Configure the necessary environment variables for each website, such as database connection details and authentication secrets.
+- Configure the necessary environment variables for each website, such as database connection details and authentication secrets.
 
 
-Start the main blog website:
+- Start the website:
 ```
-   cd main-blog-website
    npm start
 ```
 
@@ -69,7 +68,7 @@ Contributions to the project are welcome! If you find any issues or have suggest
 
 
 
-
+##
 
 
 
