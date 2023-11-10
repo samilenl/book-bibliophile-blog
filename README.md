@@ -55,6 +55,11 @@ To set up and run the websites locally, follow these steps:
    npm start
 ```
 
+- If you want to generate distribution files, you can use the command:
+```
+   npm run build
+```
+
    
 ## Contributing
 
