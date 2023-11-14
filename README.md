@@ -1,6 +1,6 @@
-[Live version of the site can be found here](https://github.com/samilenl/book-bibliophile-blog.git)
-
 # Book Bibliophile
+
+[Live version of the site can be found here](https://book-bibliophile.netlify.app/)
 
 The __Book Bibliophile__ Blog is a comprehensive platform that allows users to register, login, and engage with captivating blog posts. It provides a user-friendly interface that ensures a seamless browsing experience. Users can explore a wide range of posts on various topics and leave comments to actively participate in discussions. The website prioritizes intuitive navigation, making it effortless for users to discover posts that align with their interests. With its visually appealing design and user-centric approach, the __Book Bibliophile__ Blog aims to deliver an informative and enjoyable experience for all users.
 
