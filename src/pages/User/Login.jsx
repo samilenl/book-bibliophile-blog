@@ -8,7 +8,7 @@ const Login = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/login`, {
+      const response = await fetch(`https://book-bilbliophile-api.up.railway.app/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

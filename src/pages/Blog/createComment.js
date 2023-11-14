@@ -4,7 +4,7 @@ const createComment = async(comment, setPost, setComment, id) => {
         let now = new Date()
         now = now.toISOString()
         const token = localStorage.getItem("token")
-        const response = await fetch(`http://localhost:3000/comments/${id}/create`, {
+        const response = await fetch(`https://book-bilbliophile-api.up.railway.app/comments/${id}/create`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

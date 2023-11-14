@@ -8,7 +8,7 @@ const AllTopics = () => {
   useEffect( () => {
       async function fetchData () {
         try {
-          const allTopics = await fetch(`http://localhost:3000/topics`)
+          const allTopics = await fetch(`https://book-bilbliophile-api.up.railway.app/topics`)
           const infos = await allTopics.json()
 
 

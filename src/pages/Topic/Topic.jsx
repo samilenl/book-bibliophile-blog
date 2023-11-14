@@ -10,12 +10,12 @@ const Topic = () => {
     useEffect( () => {
         async function fetchData () {
           try {
-            const thisTopic = await fetch(`http://localhost:3000/topics/${id}`)
+            const thisTopic = await fetch(`https://book-bilbliophile-api.up.railway.app/topics/${id}`)
             const topicInfo = await thisTopic.json()
 
             for (const post of topicInfo.postWithTopic) {
               if (post.image !== null && post.image !== undefined) {
-                const postImage = await fetch(`http://localhost:3000/images/${post.image}`)
+                const postImage = await fetch(`https://book-bilbliophile-api.up.railway.app/images/${post.image}`)
                 post.imageUrl = postImage.url
               }
             }

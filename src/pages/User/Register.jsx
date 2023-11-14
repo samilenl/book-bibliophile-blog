@@ -9,7 +9,7 @@ const Register = () => {
 
   const handleSubmit = async () => {
     try {
-      const response = await fetch(`http://localhost:3000/register`, {
+      const response = await fetch(`https://book-bilbliophile-api.up.railway.app/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

@@ -8,13 +8,13 @@ const AllPosts = () => {
   useEffect( () => {
       async function fetchData () {
         try {
-          const allPosts = await fetch(`http://localhost:3000/posts`)
+          const allPosts = await fetch(`https://book-bilbliophile-api.up.railway.app/posts`)
           const infos = await allPosts.json()
           console.log(infos)
 
           for (const post of infos.allPosts) {
             if (post.image !== null && post.image !== undefined) {
-              post.imageUrl = `http://localhost:3000/images/${post.image}`
+              post.imageUrl = `https://book-bilbliophile-api.up.railway.app/images/${post.image}`
             }
             infos.commentCount.forEach((commentC) => {
               if (commentC._id === post._id) {

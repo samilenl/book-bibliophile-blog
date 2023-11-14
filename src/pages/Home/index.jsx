@@ -11,12 +11,12 @@ const Home = () => {
   useEffect(()=>{
     async function fetchData () {
       try {
-        const recentPosts = await fetch(`http://localhost:3000/posts/recent`)
+        const recentPosts = await fetch(`https://book-bilbliophile-api.up.railway.app/posts/recent`)
         const infos = await recentPosts.json()
         
         for (const post of infos.recentPosts) {
           if (post.image !== null && post.image !== undefined) {
-            post.imageUrl =`http://localhost:3000/images/${post.image}`
+            post.imageUrl =`https://book-bilbliophile-api.up.railway.app/images/${post.image}`
           }
           infos.commentCount.forEach((commentC) => {
             if (commentC._id === post._id) {

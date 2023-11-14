@@ -15,12 +15,12 @@ const Post = () => {
         console.log("here", id)
         async function fetchData () {
           try {
-            const thisPost = await fetch(`http://localhost:3000/posts/${id}`)
+            const thisPost = await fetch(`https://book-bilbliophile-api.up.railway.app/posts/${id}`)
             const postInfo = await thisPost.json()
             const imageId = postInfo.post.image;
             let data = ''
             if (imageId !== null && imageId !== undefined) {
-              data = (`http://localhost:3000/images/${imageId}`)
+              data = (`https://book-bilbliophile-api.up.railway.app/images/${imageId}`)
             }
 
             setPost({
