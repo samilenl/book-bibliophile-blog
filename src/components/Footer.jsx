@@ -11,7 +11,7 @@ const Footer = () => {
           with the intention of assisting you in making informed decisions.
         </p>
         <p>
-          COPYRIGHT © 2023 THE BOOKISH BIBLIOPHILE MEDIA LLC
+          COPYRIGHT © 2023 BOOK BIBLIOPHILE MEDIA LLC
         </p>
     </footer>
     )
