@@ -28,7 +28,7 @@ header {
 .hdr-nav {
     padding: 5px 10px;
     font-weight: 600;
-    font-size: 17px;
+    font-size: 15px;
     cursor: pointer;
 }
 
@@ -38,7 +38,7 @@ header {
 }
 
 .loginReg > .hdr-nav {
-    border: solid black 3.5px;
+    border: solid black 2.5px;
     border-radius: 10px;
 }
 
