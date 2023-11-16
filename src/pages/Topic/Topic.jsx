@@ -46,7 +46,7 @@ const Topic = () => {
             </div>
           </div>  
         : <>
-          <h1 className="postsHdr">{topic.info.title}</h1>
+          <h1 className="postsHdr">{topic.info.title} Posts</h1>
           <div>
             { 
               (topic.posts.length > 0) 

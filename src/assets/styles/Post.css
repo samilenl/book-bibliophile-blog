@@ -98,6 +98,10 @@
     height: 100vh;
 }
 
+.article {
+    margin-top: 30px;
+}
+
 .article > * {
     font-size: 18.5px;
 }
