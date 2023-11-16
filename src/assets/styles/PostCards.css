@@ -14,13 +14,13 @@
 
 .cardImg {
     border: solid black 2px;
-    height: clamp(20vw, 60vw, 100vw);
+    height: 20vw;
     overflow: hidden;
 }
 
 .cardImg > img {
     width: 100%;
-    height: clamp(20vw, 60vw, 100vw);
+    height: 20vw;
     object-fit: cover;
 }
 
