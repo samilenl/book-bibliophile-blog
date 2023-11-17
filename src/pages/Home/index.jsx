@@ -63,8 +63,6 @@ const Home = () => {
                     <p className="info">Topics</p>
                     <p className="desCont">
                       <span className="des">Christian Literature</span>
-                      <span className="des">Topic Again</span>
-                      <span className="des">Another One</span>
                     </p>
                   </div>
                 </div>
