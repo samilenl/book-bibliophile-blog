@@ -14,13 +14,13 @@
 
 .cardImg {
     border: solid black 2px;
-    height: 20vw;
+    height: 33vh;
     overflow: hidden;
 }
 
 .cardImg > img {
     width: 100%;
-    height: 20vw;
+    height: 33vh;
     object-fit: cover;
 }
 
